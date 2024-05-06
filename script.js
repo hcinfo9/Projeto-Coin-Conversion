@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const btcBrl = 301238
         const btcGbp = 46836
         const btcEur = 54920
-        const btcUsd = 58755 
+        const btcUsd = 58755
 
         if (typeCoinToConvert.value === "real" && CoinConverted.value === "dolar") {
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             valueToConvert.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency", currency: "USD"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/real.png";
             document.querySelector(".labels2").innerHTML = "Real";
             valueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["BRLUSD"]["bid"]);
 
         }
-   
+
 
         if (typeCoinToConvert.value === 'real' && CoinConverted.value === "euro") {
             document.querySelector(".img-country").src = "./assets/real.png";
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["GBPBRL"]["bid"]);
         }
 
-        if ( typeCoinToConvert.value === "libra" && CoinConverted.value === "real" ) {
+        if (typeCoinToConvert.value === "libra" && CoinConverted.value === "real") {
 
             document.querySelector(".img-country").src = "./assets/libra.png";
             document.querySelector(".labels").innerHTML = "Libra";
@@ -104,20 +104,20 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["BRLGBP"]["bid"]);
         }
 
-        if (typeCoinToConvert.value === "real" && CoinConverted.value === "bitcoin")  {
+        if (typeCoinToConvert.value === "real" && CoinConverted.value === "bitcoin") {
             document.querySelector(".img-country").src = "./assets/real.png";
             document.querySelector(".labels").innerHTML = "Real";
             valueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
                 style: "currency", currency: "BRL"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/bitcoin.png";
             document.querySelector(".labels2").innerHTML = "Bitcoin";
             valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue / dados["BTCBRL"]["bid"]);
 
-           
+
         };
 
         if (typeCoinToConvert.value === "bitcoin" && CoinConverted.value === "real") {
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector(".img-country").src = "./assets/bitcoin.png";
             document.querySelector(".labels").innerHTML = "Bitcoin";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC", maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue);
 
             document.querySelector(".img-country-destiny").src = "./assets/real.png";
@@ -150,14 +150,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["EURUSD"]["bid"]);
         }
 
-        if (typeCoinToConvert.value ==="euro" && CoinConverted.value === "dolar" ) {
+        if (typeCoinToConvert.value === "euro" && CoinConverted.value === "dolar") {
 
             document.querySelector(".img-country").src = "./assets/euro.png";
             document.querySelector(".labels").innerHTML = "Euro";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
                 style: "currency", currency: "EUR"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/dolar.png";
             document.querySelector(".labels2").innerHTML = "Dólar";
             valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -165,14 +165,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["USDEUR"]["bid"]);
         }
 
-        if (typeCoinToConvert.value ==="dolar" && CoinConverted.value === "libra" ) {
+        if (typeCoinToConvert.value === "dolar" && CoinConverted.value === "libra") {
 
             document.querySelector(".img-country").src = "./assets/dolar.png";
             document.querySelector(".labels").innerHTML = "Dólar";
             valueToConvert.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency", currency: "USD"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/libra.png";
             document.querySelector(".labels2").innerHTML = "Libra";
             valueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
@@ -180,8 +180,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["GBPUSD"]["bid"]);
         }
 
-        if (typeCoinToConvert.value ==="libra" && CoinConverted.value === "dolar" ) {
-            
+        if (typeCoinToConvert.value === "libra" && CoinConverted.value === "dolar") {
+
             document.querySelector(".img-country").src = "./assets/libra.png";
             document.querySelector(".labels").innerHTML = "Libra";
             valueToConvert.innerHTML = new Intl.NumberFormat("en-GB", {
@@ -195,44 +195,44 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["USDGBP"]["bid"]);
         }
 
-        if (typeCoinToConvert.value === "dolar" && CoinConverted.value === "bitcoin")  {
+        if (typeCoinToConvert.value === "dolar" && CoinConverted.value === "bitcoin") {
 
             document.querySelector(".img-country").src = "./assets/dolar.png";
             document.querySelector(".labels").innerHTML = "Dólar";
             valueToConvert.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency", currency: "USD"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/bitcoin.png";
             document.querySelector(".labels2").innerHTML = "Bitcoin";
             valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue / dados["BTCUSD"]["bid"]);
         }
 
-        if (typeCoinToConvert.value === "bitcoin" && CoinConverted.value === "dolar")  {
+        if (typeCoinToConvert.value === "bitcoin" && CoinConverted.value === "dolar") {
 
             document.querySelector(".img-country").src = "./assets/bitcoin.png";
             document.querySelector(".labels").innerHTML = "Bitcoin";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/dolar.png";
             document.querySelector(".labels2").innerHTML = "Dólar";
             valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
                 style: "currency", currency: "USD"
-            }).format(inputCoinValue * btcUsd);            
+            }).format(inputCoinValue * btcUsd);
         }
 
-        if (typeCoinToConvert.value ==="euro" && CoinConverted.value === "libra" ) {
+        if (typeCoinToConvert.value === "euro" && CoinConverted.value === "libra") {
 
             document.querySelector(".img-country").src = "./assets/euro.png";
             document.querySelector(".labels").innerHTML = "Euro";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
                 style: "currency", currency: "EUR"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/libra.png";
             document.querySelector(".labels2").innerHTML = "Libra";
             valueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
@@ -240,8 +240,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["GBPEUR"]["bid"]);
         }
 
-        if (typeCoinToConvert.value ==="libra" && CoinConverted.value === "euro" ) {
- 
+        if (typeCoinToConvert.value === "libra" && CoinConverted.value === "euro") {
+
             document.querySelector(".img-country").src = "./assets/libra.png";
             document.querySelector(".labels").innerHTML = "Libra";
             valueToConvert.innerHTML = new Intl.NumberFormat("en-GB", {
@@ -255,79 +255,79 @@ document.addEventListener("DOMContentLoaded", function () {
             }).format(inputCoinValue / dados["EURGBP"]["bid"]);
         }
 
-        if (typeCoinToConvert.value === "euro" && CoinConverted.value === "bitcoin")  {
+        if (typeCoinToConvert.value === "euro" && CoinConverted.value === "bitcoin") {
 
             document.querySelector(".img-country").src = "./assets/euro.png";
             document.querySelector(".labels").innerHTML = "Euro";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
                 style: "currency", currency: "EUR"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/bitcoin.png";
             document.querySelector(".labels2").innerHTML = "Bitcoin";
             valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue / dados["BTCEUR"]["bid"]);
         }
 
-        if (typeCoinToConvert.value === "bitcoin" && CoinConverted.value === "euro")  {
+        if (typeCoinToConvert.value === "bitcoin" && CoinConverted.value === "euro") {
 
             document.querySelector(".img-country").src = "./assets/bitcoin.png";
             document.querySelector(".labels").innerHTML = "Bitcoin";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/euro.png";
             document.querySelector(".labels2").innerHTML = "Euro";
             valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
                 style: "currency", currency: "EUR"
-            }).format(inputCoinValue * btcEur);            
+            }).format(inputCoinValue * btcEur);
         }
 
-        if (typeCoinToConvert.value === "euro" && CoinConverted.value === "bitcoin")  {
+        if (typeCoinToConvert.value === "euro" && CoinConverted.value === "bitcoin") {
 
             document.querySelector(".img-country").src = "./assets/euro.png";
             document.querySelector(".labels").innerHTML = "Euro";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
                 style: "currency", currency: "EUR"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/bitcoin.png";
             document.querySelector(".labels2").innerHTML = "Bitcoin";
             valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue / dados["BTCEUR"]["bid"]);
         }
 
-        if (typeCoinToConvert.value === "libra" && CoinConverted.value === "bitcoin")  {
+        if (typeCoinToConvert.value === "libra" && CoinConverted.value === "bitcoin") {
 
             document.querySelector(".img-country").src = "./assets/libra.png";
             document.querySelector(".labels").innerHTML = "Libra";
             valueToConvert.innerHTML = new Intl.NumberFormat("en-GB", {
                 style: "currency", currency: "GBP"
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/bitcoin.png";
             document.querySelector(".labels2").innerHTML = "Bitcoin";
             valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
-            }).format(inputCoinValue / btcGbp);          
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
+            }).format(inputCoinValue / btcGbp);
         }
 
-        if (typeCoinToConvert.value === "bitcoin" && CoinConverted.value === "libra")  {
+        if (typeCoinToConvert.value === "bitcoin" && CoinConverted.value === "libra") {
 
             document.querySelector(".img-country").src = "./assets/bitcoin.png";
             document.querySelector(".labels").innerHTML = "Bitcoin";
             valueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency", currency: "BTC",maximumFractionDigits:4
+                style: "currency", currency: "BTC", maximumFractionDigits: 4
             }).format(inputCoinValue);
-            
+
             document.querySelector(".img-country-destiny").src = "./assets/libra.png";
             document.querySelector(".labels2").innerHTML = "Libra";
             valueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
                 style: "currency", currency: "GBP"
-            }).format(inputCoinValue * btcGbp);          
+            }).format(inputCoinValue * btcGbp);
         }
 
     }
@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
         convertValue(dados);
     }
 
-    
+
 });
 
 

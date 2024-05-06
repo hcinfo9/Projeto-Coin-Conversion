@@ -9,19 +9,18 @@
 }
 
 body {
-    
+
     width: 100%;
-    height: 100vh;     
+    height: 100vh;
 }
 
-.background-image{
+.background-image {
     width: 100%;
     height: 100%;
-    
-    
+
 }
 
-header{
+header {
     height: 23vh;
     background-color: rgba(1, 29, 39, .8);
 }
@@ -49,19 +48,15 @@ header{
 
 nav {
     display: flex;
-    justify-content: space-around; /* Alinha os itens uniformemente ao longo do container */
+    justify-content: space-around;
+    /* Alinha os itens uniformemente ao longo do container */
     align-items: center;
     width: 100%;
     height: 7vh;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-   
     background-color: rgba(1, 29, 39, .8);
-    
-   
-} 
-
-
+}
 
 a {
     text-decoration: none;
@@ -71,10 +66,11 @@ a {
     font-weight: 600;
     color: white;
     padding: 10px;
-   
+
 
 }
-a:hover{
+
+a:hover {
     color: #0b83af;
 }
 
@@ -88,10 +84,9 @@ main {
 
 }
 
-
-
 section {
-    width: 40%; /* Porcentagem da largura do pai */
+    width: 40%;
+    /* Porcentagem da largura do pai */
     height: 60vh;
     position: absolute;
     top: 65%;
@@ -107,7 +102,7 @@ section {
     align-items: center;
     justify-content: center;
     border: 1px solid white;
-    margin: 0 auto; 
+    margin: 0 auto;
 
 }
 
@@ -115,14 +110,12 @@ section {
     position: relative;
     width: 20vw;
     height: auto;
-    background-color: rgba(1, 29, 39,.8);
+    background-color: rgba(1, 29, 39, .8);
     color: white;
     border: 1px solid #fff;
     padding: 15px;
     appearance: none;
     top: -11%;
-
-
 }
 
 .select-convert-destiny {
@@ -138,8 +131,6 @@ section {
 
 }
 
-
-
 input {
     position: relative;
     width: 20vw;
@@ -151,7 +142,6 @@ input {
     top: -3%;
 
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -167,18 +157,16 @@ label {
 
 .label-origin {
     position: absolute;
-    top:2%;
+    top: 2%;
     left: 25%;
-    
+
 
 }
 
 .label-destiny {
     position: absolute;
-    top:17%;
-    left:25%
-
-
+    top: 17%;
+    left: 25%
 }
 
 .label-input {
@@ -197,8 +185,7 @@ label {
     cursor: pointer;
     color: white;
     position: absolute;
-    top:48%
-
+    top: 48%
 }
 
 
@@ -219,7 +206,8 @@ label {
     border-radius: 5px;
     position: relative;
 }
-.div-convert{
+
+.div-convert {
     position: relative;
     width: 50%;
     height: 100%;
@@ -227,10 +215,10 @@ label {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
-.div-converted{
+.div-converted {
     position: relative;
     width: 50%;
     height: 100%;
@@ -238,213 +226,254 @@ label {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
-.image-convert{
-   width: 120px;
-   
-   
+.image-convert {
+    width: 120px;
+
+
 
 }
 
 .img-country {
-    
+
     width: 65px;
     height: auto;
-   
+
 }
 
 .img-country-destiny {
     width: 65px;
     height: auto;
-    
+
 }
 
-.labels,.labels2{
+.labels,
+.labels2 {
     position: relative;
     top: 10%;
 }
 
-.value-to-convert,.value-converted{
+.value-to-convert,
+.value-converted {
     position: relative;
     bottom: 10%;
 }
 
 
-@media screen and (max-width:1920px){
-    .label-origin,.label-destiny,.label-input{
+@media screen and (max-width:1920px) {
+
+    .label-origin,
+    .label-destiny,
+    .label-input {
         font-size: 18px;
         left: 15%;
     }
 
-    .div-moedas{
+    .div-moedas {
         width: 28vw;
         height: 20vh;
     }
-    .select-convert,.select-convert-destiny, input{
+
+    .select-convert,
+    .select-convert-destiny,
+    input {
         width: 28vw;
         height: auto;
     }
-    .button-convert{
+
+    .button-convert {
         width: 28vw;
     }
 }
 
-@media screen and (max-width:1450px){
+@media screen and (max-width:1450px) {
 
-    .select-convert,.select-convert-destiny, input{
+    .select-convert,
+    .select-convert-destiny,
+    input {
         width: 28vw;
         height: auto;
     }
 
-    .div-moedas{
+    .div-moedas {
         width: 30vw;
         height: 20vh;
-        
+
     }
-  
+
 }
 
-@media screen and (max-width:1000px){
-    section{
-        width:70vw;
+@media screen and (max-width:1000px) {
+    section {
+        width: 70vw;
     }
 
-    .select-convert,.select-convert-destiny, input{
+    .select-convert,
+    .select-convert-destiny,
+    input {
         width: 45vw;
         height: auto;
     }
-    .button-convert{
+
+    .button-convert {
         width: 45vw;
     }
 
-    .label-origin,.label-destiny,.label-input{
+    .label-origin,
+    .label-destiny,
+    .label-input {
         font-size: 18px;
         left: 17.5%;
     }
 
-    .label-origin{
+    .label-origin {
         top: 2%;
     }
 
-    .label-destiny{
+    .label-destiny {
         top: 17%;
     }
 
-    .div-moedas{
+    .div-moedas {
         width: 48vw;
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:700px) {
 
-    .logo-image{
+    .logo-image {
         top: 60%;
         width: 40vw;
         height: auto;
     }
-    nav{
-        display:none;
+
+    nav {
+        display: none;
     }
-    section{
+
+    section {
         width: 70vw;
         height: 65vh;
     }
-    
+
     .div-moedas {
         width: 60vw;
     }
-    
 
-    .label-input,.label-origin,.label-destiny{
+
+    .label-input,
+    .label-origin,
+    .label-destiny {
         left: 15.5%;
 
     }
-    .label-origin{
-        top:5%
+
+    .label-origin {
+        top: 5%
     }
 
-    .label-destiny{
+    .label-destiny {
         top: 20%;
     }
 
-    .label-input{
-        top:33.5%
+    .label-input {
+        top: 33.5%
     }
 
-    .label-input,.label-origin,.label-destiny, .labels, .labels2,.value-converted,.value-to-convert{
+    .label-input,
+    .label-origin,
+    .label-destiny,
+    .labels,
+    .labels2,
+    .value-converted,
+    .value-to-convert {
         font-size: 15px;
     }
-    .select-convert,.select-convert-destiny,input{
+
+    .select-convert,
+    .select-convert-destiny,
+    input {
         width: 48vw;
         height: auto;
     }
-    .button-convert{
+
+    .button-convert {
         width: 48vw;
     }
 
- 
+
 }
 
 @media screen and (max-width:500px) {
-    .logo-image{
+    .logo-image {
         width: 60vw;
     }
-    section{
+
+    section {
         width: 90vw;
     }
 
-    .select-convert,.select-convert-destiny,input,.button-convert{
+    .select-convert,
+    .select-convert-destiny,
+    input,
+    .button-convert {
         width: 65vw;
     }
 
-    .label-destiny,.label-origin, .label-input{
-        left:13%;
+    .label-destiny,
+    .label-origin,
+    .label-input {
+        left: 13%;
     }
 
-    .div-moedas{
+    .div-moedas {
         width: 75vw;
     }
 
 }
 
 @media screen and (max-width:375px) {
-    .label-origin{
-        top:2.5%;
-        font-size:12px;
+    .label-origin {
+        top: 2.5%;
+        font-size: 12px;
     }
 
-    .label-input{
-        font-size:12px;
-        top:35%
+    .label-input {
+        font-size: 12px;
+        top: 35%
     }
 
-    .label-destiny{ 
-        font-size:12px;
-        top:18.5%
-
+    .label-destiny {
+        font-size: 12px;
+        top: 18.5%
     }
 
-    .select-convert,.select-convert-destiny,input{
+    .select-convert,
+    .select-convert-destiny,
+    input {
         height: 6.5vh;
     }
 
-    .button-convert{
-        top:52%;
-        height:6vh;
+    .button-convert {
+        top: 52%;
+        height: 6vh;
     }
 
-    .div-moedas{
-        top:15%;
+    .div-moedas {
+        top: 15%;
     }
 
-    .img-country,.img-country-destiny{
+    .img-country,
+    .img-country-destiny {
         width: 50px;
     }
 
-    .labels,.labels2, .value-to-convert,.value-converted{
+    .labels,
+    .labels2,
+    .value-to-convert,
+    .value-converted {
         font-size: 12px;
     }
 }
-
