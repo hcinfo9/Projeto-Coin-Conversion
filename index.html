@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut" href="./assets/favicon.ico">
+    <title>Convert Money</title>
+</head>
+<body>
+    <img class="background-image" src="./assets/Como-funciona-um-conversor-de-moeda-1024x683.jpg"  alt="image-moeda">
+    <div class="overlay-body">
+        <header>
+            <img class="logo-image" src="./assets/LampIdea-removebg-preview.png" alt="">
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="">Conversion API</a>
+            <a href="#">About</a>
+            <a href="#">Help Me</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="overlay-left">
+
+        </div>
+        <main>
+            <section>
+                <label class="label-origin">
+                    Select a currency to convert from:</label>
+                    <select class="select-convert" required >
+                        <option value="Nenhum Selecionado">Select:</option>
+                        <option value="real">R$ Real Brazilian</option>
+                        <option value="dolar">US$ Dólar American</option>
+                        <option value="libra">£  Libra</option>
+                        <option value="euro">€  Euro</option>
+                        <option value="bitcoin">₿  Bitcoin</option>
+                    </select>
+                
+                
+
+                <label  class ="label-destiny">Convert to:<br></label> 
+                    
+                    <select class="select-convert-destiny" required>
+                        <option value="Nenhum Selecionado">Select:</option>
+                        <option value="real">R$ Real Brazilian</option>
+                        <option value="dolar">US$ Dólar American</option>
+                        <option value="libra">£  Libra</option>
+                        <option value="euro">€  Euro</option>
+                        <option value="bitcoin">₿  Bitcoin</option>
+                    </select>
+               
+                
+
+                <label class="label-input">
+                    Value:</label><br>
+                    <input class="input-value" type="number" placeholder="R$ 10.000,00" required>
+                
+                
+
+                <button class="button-convert">Convert</button>
+
+                <div class="div-moedas">
+                  
+                    <div class="div-convert">
+                        <label class="labels">Coin</label>
+                        <img class="img-country" src="./assets/moeda.png" alt="Coin-origin">
+                        <label class="value-to-convert">Value</label>
+                    </div>
+                    <img  class="image-convert" src="./assets/img-convert.png" alt="imagem-convert">
+                    <div  class="div-converted">
+                        <label class="labels2">Coin</label>
+                        <img class="img-country-destiny" src="./assets/moeda.png" alt="Coin-destiny">
+                        <label class="value-converted">Value</label>
+                    </div>
+
+                    
+                    
+                </div>
+            </section> 
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+        
+</body>
+<script src="./script.js"></script>
+</html>
