@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (coin.currency === typeCoinToConvert.value){
                 document.querySelector(".img-country").src = `./assets/${coin.value}.png`;
                 document.querySelector(".labels").innerHTML = coin.value;
+
                 valueToConvert.innerHTML = new Intl.NumberFormat(coin.lang, {
                     style: "currency", currency: coin.currency
                 }).format(inputCoinValue);
@@ -60,20 +61,26 @@ document.addEventListener("DOMContentLoaded", function () {
             // Remove a option Bitcoin pois a API não tem Conversão de GBP para BTC
             if (typeCoinToConvert.value==="GBP") {
                 const optionRemove = CoinConverted.querySelector('option[value="BTC"]');
-                if(optionRemove) optionRemove.remove();
+                if(optionRemove) optionRemove.remove(); 
             }
 
             if (coin.currency === CoinConverted.value){
                 document.querySelector(".img-country-destiny").src = `./assets/${coin.value}.png`;
                 document.querySelector(".labels2").innerHTML = coin.value;
 
-                const conversionRate = dados[CoinConverted.value + typeCoinToConvert.value]["bid"];
                 const formatOptions = { style: "currency", currency: coin.currency };
+
+                if (dados===null) {
+                    valueConverted.innerHTML = new Intl.NumberFormat(coin.lang, formatOptions).format(inputCoinValue);
+                    return;
+                } 
+                
+                const conversionRate = dados[CoinConverted.value + typeCoinToConvert.value]["bid"];
 
                 if (CoinConverted.value==="BTC") {
                     Object.assign(formatOptions, { minimumFractionDigits: 4, maximumFractionDigits: 8 });
                 }
-            
+
                 valueConverted.innerHTML = new Intl.NumberFormat(coin.lang, formatOptions).format(inputCoinValue / conversionRate);
         
             } 
@@ -81,12 +88,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     function coinPrice() {
 
+        //Verifica se as options são iguais e trata isso
         if (typeCoinToConvert.value === CoinConverted.value){
             resetSelects();
             return;
         };
 
+        // Verifica se o campo input é vazio para não chamar a API nesse caso
+        if (document.querySelector(".input-value").value ==="")  convertValue(null);
+
         fetchCoinPrice().then(dados => convertValue(dados));
+        
     }
 
     typeCoinToConvert.addEventListener('change', coinPrice);
