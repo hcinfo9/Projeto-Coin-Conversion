@@ -6,10 +6,10 @@
 
 <p>Conversão de Moedas: Permite ao usuário selecionar uma moeda de origem e uma moeda de destino, inserir um valor e converter esse valor de uma moeda para outra.</p>
 <p>Atualização Automática das Taxas de Câmbio: A aplicação busca automaticamente as taxas de câmbio mais recentes da API sempre que o usuário realiza uma conversão, garantindo precisão e atualização em tempo real.<p>
-<p>Interface Intuitiva: A interface de usuário é simples e intuitiva, permitindo uma experiência de conversão de moedas sem complicações.</p>
+<p>Interface Intuitiva: A interface de usuário é simples e intuitiva, permitindo uma experiência de conversão de moedas sem complicações.</p><br>
 
 
-<img width="" src= "![Design_sem_nome__16_-removebg-preview](https://github.com/hcinfo9/Projeto-Coin-Conversion/assets/167317747/c1f0d084-07ef-4e39-993b-694f6cce5ba3)"/>
+<img align="center" width="5000px" src= "https://github.com/hcinfo9/Projeto-Coin-Conversion/blob/master/assets/Design_sem_nome__16_-removebg-preview.png"/><br>
 
 
 <h2 align="center">Componentes Principais:</h2>
