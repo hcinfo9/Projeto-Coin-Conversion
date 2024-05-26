@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
         for (const coin of coins) {
             if (coin.currency === typeCoinToConvert.value) {
                 // Atualiza a imagem e o label da moeda de origem
-                document.querySelector(".img-country").src = `./assets/${coin.value}.png`;
-                document.querySelector(".labels").innerHTML = coin.value;
+                document.querySelector(".img-country").src = `./assets/${coin.value.toLowerCase()}.png`;
+                document.querySelector(".labels").innerHTML = coin.value;   
 
                 // Formata o valor de entrada para exibição
                 valueToConvert.innerHTML = new Intl.NumberFormat(coin.lang, {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (coin.currency === CoinConverted.value) {
                 // Atualiza a imagem e o label da moeda de destino
-                document.querySelector(".img-country-destiny").src = `./assets/${coin.value}.png`;
+                document.querySelector(".img-country-destiny").src = `./assets/${coin.value.toLowerCase()}.png`;
                 document.querySelector(".labels2").innerHTML = coin.value;
 
                 // Formatação das opções de formatação para o número convertido
