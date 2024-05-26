@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         typeCoinToConvert.value = "Nenhum Selecionado";
         CoinConverted.value = "Nenhum Selecionado";
         valueToConvert.innerHTML = "Value";
-        valueConverted.innerHTML = "Value";
+        valueConverted.innerHTML = "Value"; 
         document.querySelector(".img-country").src = "./assets/moeda.png";
         document.querySelector(".img-country-destiny").src = "./assets/moeda.png";
         document.querySelector(".labels").innerHTML = "Coin";
